@@ -53,6 +53,9 @@ server.port=8088
 
 ## Endpoints disponibles
 
+Importa la colección incluida:  
+**`EcoMarket - Soporte-Service.postman_collection.json`**
+
 | Método | Endpoint                                      | Descripción                                                              |
 |--------|-----------------------------------------------|--------------------------------------------------------------------------|
 | POST   | `/api/soportes`                               | Crea una nueva solicitud de soporte.                                     |
