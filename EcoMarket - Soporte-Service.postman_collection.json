@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "1ba71e04-6c75-4e67-94b0-893f4ab50e9f",
+		"name": "EcoMarket - Soporte-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43955048"
+	},
+	"item": [
+		{
+			"name": "Crear solicitud de soporte",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombreCliente\": \"Cliente\",\n  \"emailCliente\": \"cliente@example.com\",\n  \"asunto\": \"Problema con el carrito\",\n  \"mensaje\": \"No se agregan productos al carrito desde Firefox.\"\n}"
+				},
+				"url": "http://localhost:8088/api/soportes"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todas las solicitudes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/api/soportes"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar por estado (pendiente)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8088/api/soportes/estado/pendiente"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar estado (id = 1)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/api/soportes/1/estado?estado=resuelto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"soportes",
+						"1",
+						"estado"
+					],
+					"query": [
+						{
+							"key": "estado",
+							"value": "resuelto"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
