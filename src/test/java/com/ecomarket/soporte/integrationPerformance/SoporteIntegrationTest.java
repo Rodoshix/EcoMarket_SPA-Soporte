@@ -1,4 +1,4 @@
-package com.ecomarket.soporte;
+package com.ecomarket.soporte.integrationPerformance;
 
 import com.ecomarket.soporte.model.Soporte;
 import com.ecomarket.soporte.repository.SoporteRepository;
